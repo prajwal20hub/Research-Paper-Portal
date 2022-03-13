@@ -1,0 +1,34 @@
+for generating SSH Key - (Already done for my account)
+1) $ ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
+2) $ cat <path on which above key saved>
+
+---> copy that key and paste in GitHub SSH key.
+_______________________________________________________________
+
+For uploading project through repositories - 
+$ git config --global user.name Prajwal
+$ git config --global user.email prajwalpchunarkar@gmail.com
+
+1) $ git init                                                -----> create hidden .git folder
+2) $ git status                                           ----> to check iinitial status()
+3) $ git add .                                             ----> this will upload all files
+4) git commit -m "Initial Commit"   
+5) git status         
+6) git remote add origin <SSH url.git >
+7) $ git push origin master                                ----> push all folders on GitHUb
+
+now check on Github all files successfully shown.
+_______________________________________________________________
+ 
+For updatation(adding extra file) -
+1) $ git add .
+2) $ git commit -m "Added file_name"
+3) $ git push origin master
+
+________________________________________________________________
+
+Extra Commands - 
+touch .gitignore           -----> if some file or folder don't want to upload on gitHub which is present in folder(PC's)
+$ tail <path to id_rsa.pub> # Add this key to your GitHub account
+
+________________________________________________________________
