@@ -9,13 +9,13 @@ For uploading project through repositories -
 $ git config --global user.name Prajwal
 $ git config --global user.email prajwalpchunarkar@gmail.com
 
-1) $ git init                                                -----> create hidden .git folder
-2) $ git status                                           ----> to check iinitial status()
-3) $ git add .                                             ----> this will upload all files
+1) git init                                                -----> create hidden .git folder
+2) git status                                           ----> to check iinitial status()
+3) git add .                                             ----> this will upload all files
 4) git commit -m "Initial Commit"   
 5) git status         
-6) git remote add origin <SSH url.git >
-7) $ git push origin master                                ----> push all folders on GitHUb
+6) git remote add origin <SSH url.git >                  //do not include  < > this                        (For already exist origin -->[ git remote set-url origin <SSH url.git > ])
+7) git push origin master                                ----> push all folders on GitHUb      // if errror add ( -- force)
 
 now check on Github all files successfully shown.
 _______________________________________________________________
